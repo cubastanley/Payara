@@ -55,14 +55,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-// Portions Copyright [2020] [Payara Foundation and/or its affiliates]
 
 package org.glassfish.api.deployment;
 
 import java.net.URL;
 import java.security.cert.Certificate;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import java.util.jar.Manifest;
 
 /**
@@ -116,11 +113,6 @@ public class ResourceEntry {
      */
     public Certificate[] certificates = null;
 
-    /**
-     * Map of generated linked classes e.g Generated EJB interface or Weld proxies
-     */
-    public ConcurrentMap<String, GeneratedResourceEntry> generatedResources
-            = new ConcurrentHashMap<>();
 
 }
 

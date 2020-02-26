@@ -174,10 +174,11 @@ public class SingletonLifeCycleManager {
 
         }
 
+        return;
     }
 
     public synchronized void initializeSingleton(AbstractSingletonContainer c) {
-        initializeSingleton(c, new ArrayList<>());
+        initializeSingleton(c, new ArrayList<String>());
     }
 
     private void initializeSingleton(AbstractSingletonContainer c, List<String> initList) {

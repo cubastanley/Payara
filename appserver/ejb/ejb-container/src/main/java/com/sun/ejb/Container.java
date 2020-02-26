@@ -305,7 +305,7 @@ public interface Container {
     void onReady();
 
     /** 
-     * Called when server instance is shutting down
+     * Called when server instance is shuting down
      */
     void onShutdown();
 
